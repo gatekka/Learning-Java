@@ -1,4 +1,6 @@
 //Created: 2024-03-17
+//To-Do:
+//- Create graph for geometric sequence calculator
 
 import java.util.Scanner;
 
