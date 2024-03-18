@@ -1,3 +1,5 @@
+// Created: 2024-03-17 03:46 PM
+
 import java.util.Scanner;
 
 public class Numerical_Triangle
