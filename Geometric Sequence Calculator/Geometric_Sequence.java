@@ -18,14 +18,17 @@ public class Geometric_Sequence
    split[i] = input.nextDouble();
   }
 
+  double SumOfSequence = split[0];
   double currentMultiple = split[0];
   System.out.println("The common ratio is: " + (split[1] / split[0]));
   for(int i = 1; i < split[2]; i++)
   {
    System.out.println( "n" + i + " = " + currentMultiple + " ");
    double total = currentMultiple * (split[1] / split[0]);
+   SumOfSequence += total;
    currentMultiple = total;
   }
   System.out.println("n" + (int)split[2] + " = " + currentMultiple);
+  System.out.println("Sum of all numbers up to n" + (int)split[2] + ": " + SumOfSequence);
  }
 }
