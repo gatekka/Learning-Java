@@ -7,20 +7,22 @@ import javax.swing.JOptionPane;
 
 public class ReadingFile {
     public static void main (String[] args) {
-        
+        String path = "input.txt"; // File Path
+
         ArrayList<String> whichline = new ArrayList<String>();
-        try (BufferedReader read = new BufferedReader(new FileReader("input.txt"))) {
+        try (BufferedReader read = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = read.readLine()) != null) {
                 whichline.add(line);
                 // System.out.println(line);
             }
+            System.out.println(whichline.size());
         } catch (FileNotFoundException e) {
-            JOptionPane.showMessageDialog(null, "Please create file \"input.txt\"", "File not found", 0);
+            JOptionPane.showMessageDialog(null, "Please create file " + "\"" + path + "\"", "File not found", 0);
             e.printStackTrace();
             return;
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
         // Allows user to choose which line to output via Scanner
@@ -35,7 +37,9 @@ public class ReadingFile {
                 success = true;
             } catch (IndexOutOfBoundsException e) {
                 JOptionPane.showMessageDialog(null, "Please choose a number between 1-" + (whichline.size()), "Error", 0);
-                // e.printStackTrace();
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         
