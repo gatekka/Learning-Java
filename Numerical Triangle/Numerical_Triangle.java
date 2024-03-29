@@ -6,11 +6,13 @@ public class Numerical_Triangle
 {
  public static void main(String[] args)
  {
-  Scanner in = new Scanner(System.in);
-
+     
   System.out.println("---Numerical Triangle---");
   System.out.print("Enter a number: ");
+  Scanner in = new Scanner(System.in);
   int num = in.nextInt();
+  in.close();
+  
 
   String pyramid = "";
   for(int i = 1; i <= num; i++)
