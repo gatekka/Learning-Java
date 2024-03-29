@@ -7,6 +7,7 @@ public class ArrayOperations
   System.out.print("Enter a list of numbers: ");
   Scanner scanner = new Scanner(System.in);
   String input = scanner.nextLine();
+  scanner.close();
   String[] items = input.split(" ");
   int[] num = new int[items.length];
   for(int i = 0; i < items.length; i++)
