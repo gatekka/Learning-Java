@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class ReadingFile {
+public class ReadingTXT {
     public static void main (String[] args) {
         String path = "input.txt"; // File Path
 
@@ -15,7 +15,6 @@ public class ReadingFile {
             while ((line = read.readLine()) != null) {
                 whichline.add(line);
             }
-            System.out.println(whichline.size());
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null, "Please create file " + "\"" + path + "\"", "File not found", 0);
             e.printStackTrace();
@@ -30,9 +29,12 @@ public class ReadingFile {
         // With JOptionPane
         boolean success = false;
         while (!success) {
+            String num = (JOptionPane.showInputDialog(null, "Enter the number of the line you'd like to read between 1-" + (whichline.size()) + ": ", null, 3));
+            if (num == null) {
+                break;
+            }
             try {
-                int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter the number of the line you'd like to read between 1-" + (whichline.size()) + ": "));
-                JOptionPane.showMessageDialog(null, whichline.get(num - 1), "Line " + num, 1);
+                JOptionPane.showMessageDialog(null, whichline.get(Integer.parseInt(num) - 1), "Line " + num, 1);
                 success = true;
             } catch (IndexOutOfBoundsException e) {
                 JOptionPane.showMessageDialog(null, "Please choose a number between 1-" + (whichline.size()), "Error", 0);
