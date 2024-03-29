@@ -31,7 +31,7 @@ public class ReadingFile {
         while (!success) {
             try {
                 int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter the number of the line you'd like to read between 1-" + (whichline.size()) + ": "));
-                JOptionPane.showMessageDialog(null, whichline.get(num - 1), "Output", 0);
+                JOptionPane.showMessageDialog(null, whichline.get(num - 1), "Line " + num, 1);
                 success = true;
             } catch (IndexOutOfBoundsException e) {
                 JOptionPane.showMessageDialog(null, "Please choose a number between 1-" + (whichline.size()), "Error", 0);
