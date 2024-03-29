@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class ReadingTXT {
+public class TXTReader {
     public static void main (String[] args) {
         String path = "input.txt"; // File Path
 
