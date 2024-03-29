@@ -14,7 +14,6 @@ public class ReadingFile {
             String line;
             while ((line = read.readLine()) != null) {
                 whichline.add(line);
-                // System.out.println(line);
             }
             System.out.println(whichline.size());
         } catch (FileNotFoundException e) {
