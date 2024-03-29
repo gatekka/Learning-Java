@@ -8,17 +8,18 @@ public class Geometric_Sequence
 {
  public static void main(String[] args)
  {
-  Scanner input = new Scanner(System.in);
-
+     
   System.out.println("---Geometric Sequence Calculator---");
   System.out.print("Enter 3 numbers: ");
   int num = 3; // number of integers
-
+     
+  Scanner input = new Scanner(System.in);
   double[] split = new double[num];  
   for(int i = 0; i < num; i++)
   {
    split[i] = input.nextDouble();
   }
+  input.close();
 
   double SumOfSequence = split[0];
   double currentMultiple = split[0];
