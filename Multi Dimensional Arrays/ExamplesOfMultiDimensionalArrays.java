@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SettingUpMultiDimensionalArrays
+public class ExamplesOfMultiDimensionalArrays
 {
     public static void main(String[] args)
     {
