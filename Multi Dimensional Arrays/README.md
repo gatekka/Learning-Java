@@ -17,4 +17,4 @@ The following demonstrates a jagged three dimensional array which contains rows 
 
 ![Demonstration of Jagged 3D Array](demo2.jpg)
 
-By definition, layer 0 itsself already qualifies as a jagged array. Throughout the layers of a three dimensional array, the size of rows don't have to be the same as the previous, they can change in size like shown in layer 2.
+By definition, layer 0 itself already qualifies as a jagged array. Throughout the layers of a three dimensional array, the size of rows don't have to be the same as the previous, they can change in size like shown in layer 2.
