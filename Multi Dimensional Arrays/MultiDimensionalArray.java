@@ -3,7 +3,7 @@ public class MultiDimensionalArray
  public static void main(String[] args)
  {
 
-  //3D array that consists of four 2D arrays, each with different sizes of rows and columns.
+  //3D jagged array that consists of four 2D arrays, each with different sizes of rows and columns.
   int[][][] a =
   {
    {{1,2,3}, {4,5,6}, {13,14,15}},
