@@ -7,3 +7,7 @@ The following demonstrates two layers of a three dimensional array.
 - Layer 1 consists of elements {{7,8,9},{10,11,12}}
 
 ![Simple Demonstration of 3D Array](demo.png)
+
+# ExamplesOfMultiDimensionalArrays.java
+
+{gonna add content here}
