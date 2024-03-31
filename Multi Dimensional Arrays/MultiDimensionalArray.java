@@ -6,7 +6,7 @@ public class MultiDimensionalArray
   //3D array that consists of four 2D arrays, each with different sizes of rows and columns.
   int[][][] a =
   {
-   {{1,2,3}, {4,5,6}, {13,14,15},},
+   {{1,2,3}, {4,5,6}, {13,14,15}},
    {{7,8,9}, {10,11,12}},
    {{16,17,18},{19,20,21},{22,23,24,25,26},{27,28,29,30}},
    {{},{},{},{31,32,33,34}}
