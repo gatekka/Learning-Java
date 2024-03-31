@@ -13,7 +13,7 @@ The following demonstrates two layers of a three dimensional array.
 The following demonstrates a jagged three dimensional array which contains rows of different sizes.
 - Layer 0 consists of elements {{1,2,3,4},{5,6,7},{8,9,10,11,12}}
 - Layer 1 consists of elements {{13,14,15,16},{17,18,19},{20,21,22,23,24}}
-- Layer 2 consists of elements {{25,26,27,28,29,30,31,32,33,34,35,36,37}}
+- Layer 2 consists of elements {{25,26,27,28,29,30},{31,32},{33,34,35,36,37}}
 
 ![Demonstration of Jagged 3D Array](demo2.jpg)
 
