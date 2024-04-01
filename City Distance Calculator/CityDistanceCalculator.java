@@ -28,7 +28,6 @@ public class CityDistanceCalculator
             {174,1240,2121}
         };
 
-        System.out.println(distance[fromCity.indexOf(from)][toCity.indexOf(to)]);
-
+        System.out.printf("The distance is %d miles.\n" , distance[fromCity.indexOf(from)][toCity.indexOf(to)]);
     }
 }
