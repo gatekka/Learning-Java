@@ -1,3 +1,6 @@
-.DS_Store
+out
 Sample
 *.class
+.DS_Store
+.idea
+/Learning-Java.iml
